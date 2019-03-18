@@ -39,6 +39,7 @@
              better and more efficient way to do this, and you will learn about
              RecyclerView in a later lesson. -->
 
+        <!-- TODO (01) Replace the ScrollView with a RecyclerView -->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
