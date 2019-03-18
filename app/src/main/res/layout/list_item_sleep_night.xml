@@ -4,4 +4,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
+    <!-- TODO (01) Add an ImageView and set its id to quality_image. -->
+
+    <!-- TODO (02) Add a TextView to the right of quality_image and set its id to sleep_length. -->
+
+    <!-- TODO (03) Add a TextView below sleep_length and set its id to quality_string. -->
+
 </androidx.constraintlayout.widget.ConstraintLayout>
