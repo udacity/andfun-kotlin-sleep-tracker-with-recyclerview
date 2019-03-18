@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <!-- TODO (01) Add an ImageView and set its id to quality_image. -->
+    <ImageView
+        android:id="@+id/quality_image"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_sleep_5" />
 
-    <!-- TODO (02) Add a TextView to the right of quality_image and set its id to sleep_length. -->
+    <TextView
+        android:id="@+id/sleep_length"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quality_image"
+        app:layout_constraintTop_toTopOf="@+id/quality_image"
+        tools:text="Wednesday" />
 
-    <!-- TODO (03) Add a TextView below sleep_length and set its id to quality_string. -->
+    <TextView
+        android:id="@+id/quality_string"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/sleep_length"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sleep_length"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_length"
+        tools:text="Excellent!!!" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
