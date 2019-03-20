@@ -35,6 +35,7 @@
         android:layout_height="match_parent"
         tools:context=".sleeptracker.SleepTrackerFragment">
 
+        <!-- TODO (01) Remove the layoutManager attribute from the RecyclerView. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/sleep_list"
             android:layout_width="0dp"

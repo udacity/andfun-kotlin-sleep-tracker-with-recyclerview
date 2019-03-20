@@ -97,6 +97,8 @@ class SleepTrackerFragment : Fragment() {
             }
         })
 
+        // TODO (02) Create a GridLayoutManager spanning 3 columns and bind it to the RecyclerView.
+
         val adapter = SleepNightAdapter()
         binding.sleepList.adapter = adapter
 
