@@ -30,32 +30,14 @@
             tools:srcCompat="@drawable/ic_sleep_5"
             app:sleepImage="@{sleep}"/>
 
-        <!-- TODO (03) Delete sleep_length TextView. -->
-        <TextView
-            android:id="@+id/sleep_length"
-            android:layout_width="0dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/quality_image"
-            app:layout_constraintTop_toTopOf="@+id/quality_image"
-            tools:text="Wednesday"
-            app:sleepDurationFormatted="@{sleep}"/>
-
-        <!-- TODO (04) Edit the quality_string TextView to place it underneath the ImageView
-             and display correctly in the GridView. -->
         <TextView
             android:id="@+id/quality_string"
             android:layout_width="0dp"
-            android:layout_height="20dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="@+id/sleep_length"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/sleep_length"
-            app:layout_constraintTop_toBottomOf="@+id/sleep_length"
-            tools:text="Excellent!!!"
+            app:layout_constraintEnd_toEndOf="@+id/quality_image"
+            app:layout_constraintStart_toStartOf="@+id/quality_image"
+            app:layout_constraintTop_toBottomOf="@+id/quality_image"
             app:sleepQualityString="@{sleep}"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
