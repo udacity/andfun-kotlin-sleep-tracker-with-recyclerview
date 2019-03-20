@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- TODO (03) Bind views to the BindingAdapters you created in BindingUtils. -->
         <ImageView
             android:id="@+id/quality_image"
             android:layout_width="@dimen/icon_size"

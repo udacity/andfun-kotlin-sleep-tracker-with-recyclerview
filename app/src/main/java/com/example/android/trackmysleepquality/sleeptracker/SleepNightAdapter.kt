@@ -44,6 +44,8 @@ class SleepNightAdapter : ListAdapter<SleepNight,
         : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: SleepNight) {
+            // TODO (02) Replace the code below with a single binding to the SleepNight item,
+            // followed by executePendingBindings().
             val res = itemView.context.resources
 
             binding.sleepLength.text = convertDurationToFormatted(item.startTimeMilli, item.endTimeMilli, res)
