@@ -39,7 +39,6 @@
             app:enterAnim="@anim/slide_in_right"
             app:popEnterAnim="@anim/slide_in_right" />
     </fragment>
-
     <fragment
         android:id="@+id/sleep_quality_fragment"
         android:name="com.example.android.trackmysleepquality.sleepquality.SleepQualityFragment"
