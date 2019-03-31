@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- TODO (01) Wrap the ConstraintLayout in a layout tag and add data binding tag. -->
+
+<!-- TODO (02) Inside the data binding tag, define a data variable called sleep,
+     then rebuild the app. -->
+
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
