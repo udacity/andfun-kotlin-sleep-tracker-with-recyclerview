@@ -52,6 +52,12 @@ class SleepNightAdapter : RecyclerView.Adapter<SleepNightAdapter.ViewHolder>() {
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+        // TODO (01) Refactor the logic for creating the ViewHolder into a function called from().
+
+        // TODO (02) Make the from() function into a companion object.
+
+        // TODO (03) Move the companion object into the ViewHolder class, and have it
+        // return a ViewHolder.
 
         val sleepLength: TextView = itemView.findViewById(R.id.sleep_length)
         val quality: TextView = itemView.findViewById(R.id.quality_string)
