@@ -29,6 +29,10 @@ import com.example.android.trackmysleepquality.database.SleepNight
 
 class SleepNightAdapter : RecyclerView.Adapter<SleepNightAdapter.ViewHolder>() {
 
+    // TODO (03) Update SleepNightAdapter class to extend ListAdapter.
+
+    // TODO (04) Delete the data field and getItemCount() function.
+
     var data = listOf<SleepNight>()
         set(value) {
             field = value
@@ -38,6 +42,8 @@ class SleepNightAdapter : RecyclerView.Adapter<SleepNightAdapter.ViewHolder>() {
     override fun getItemCount() = data.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
+        // TODO (05) Replace data[position] with getItem().
         val item = data[position]
 
         holder.bind(item)
@@ -79,4 +85,8 @@ class SleepNightAdapter : RecyclerView.Adapter<SleepNightAdapter.ViewHolder>() {
         }
     }
 
+    // TODO (01) Create a new class called SleepNightDiffCallback that extends
+    // DiffUtil.ItemCallback<SleepNight>.
+
+    // TODO (02) In SleepNightDiffCallback, override areItemsTheSame() and areContentsTheSame().
 }
