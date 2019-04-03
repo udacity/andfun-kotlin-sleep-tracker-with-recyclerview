@@ -10,8 +10,10 @@
             name="sleep"
             type="com.example.android.trackmysleepquality.database.SleepNight" />
 
+        <!-- TODO (02) Create <variable> clickListener of type SleepNightListener. -->
     </data>
 
+    <!-- TODO (03) Set ConstrainLayout's onClick property to clickListener. -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
