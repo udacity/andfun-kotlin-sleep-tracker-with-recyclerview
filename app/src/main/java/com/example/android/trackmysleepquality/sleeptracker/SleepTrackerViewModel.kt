@@ -112,6 +112,7 @@ class SleepTrackerViewModel(
     fun doneShowingSnackbar() {
         _showSnackbarEvent.value = false
     }
+
     /**
      * If this is non-null, immediately navigate to [SleepQualityFragment] and call [doneNavigating]
      */
@@ -127,6 +128,12 @@ class SleepTrackerViewModel(
     fun doneNavigating() {
         _navigateToSleepQuality.value = null
     }
+
+    // TODO (03) Add an encapsulated navigateToSleepDataQuality LiveData, that changes
+    // when you want to navigate.
+
+    // TODO (04) Define onSleepNightClicked() and onSleepDataQualityNavigated() functions
+    // for initiating and completing navigation.
 
     init {
         initializeTonight()
