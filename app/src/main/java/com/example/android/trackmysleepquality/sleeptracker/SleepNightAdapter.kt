@@ -115,6 +115,7 @@ class SleepNightDiffCallback : DiffUtil.ItemCallback<DataItem>() {
         return oldItem.id == newItem.id
     }
 
+    @SuppressLint("DiffUtilEquals")    
     override fun areContentsTheSame(oldItem: DataItem, newItem: DataItem): Boolean {
         return oldItem == newItem
     }
