@@ -37,14 +37,14 @@ class SleepDetailViewModel(
      * Hold a reference to SleepDatabase via its SleepDatabaseDao.
      */
     val database = dataSource
-
+    /*
     /** Coroutine setup variables */
 
     /**
      * viewModelJob allows us to cancel all coroutines started by this ViewModel.
      */
     private val viewModelJob = Job()
-
+    */
     private val night = MediatorLiveData<SleepNight>()
 
     fun getNight() = night
@@ -66,7 +66,7 @@ class SleepDetailViewModel(
      */
     val navigateToSleepTracker: LiveData<Boolean?>
         get() = _navigateToSleepTracker
-
+    /*
     /**
      * Cancels all coroutines when the ViewModel is cleared, to cleanup any pending work.
      *
@@ -76,7 +76,7 @@ class SleepDetailViewModel(
         super.onCleared()
         viewModelJob.cancel()
     }
-
+    */
 
     /**
      * Call this immediately after navigating to [SleepTrackerFragment]
