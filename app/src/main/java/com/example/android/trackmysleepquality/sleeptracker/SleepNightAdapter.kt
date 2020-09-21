@@ -112,11 +112,11 @@ class SleepNightAdapter(val clickListener: SleepNightListener) : ListAdapter<Dat
  */
 class SleepNightDiffCallback : DiffUtil.ItemCallback<DataItem>() {
     override fun areItemsTheSame(oldItem: DataItem, newItem: DataItem): Boolean {
-        return oldItem.id == newItem.id
+        return oldItem === newItem
     }
 
     override fun areContentsTheSame(oldItem: DataItem, newItem: DataItem): Boolean {
-        return oldItem == newItem
+        return oldItem.id == newItem.id
     }
 }
 
