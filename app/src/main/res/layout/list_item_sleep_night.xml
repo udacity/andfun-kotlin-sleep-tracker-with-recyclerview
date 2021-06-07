@@ -28,7 +28,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:srcCompat="@drawable/ic_sleep_5"
-            app:sleepImage="@{sleep}"/>
+            app:sleepImage="@{sleep.sleepQuality}"/>
 
         <TextView
             android:id="@+id/sleep_length"
@@ -41,7 +41,8 @@
             app:layout_constraintStart_toEndOf="@+id/quality_image"
             app:layout_constraintTop_toTopOf="@+id/quality_image"
             tools:text="Wednesday"
-            app:sleepDurationFormatted="@{sleep}"/>
+            app:sleepStartMillis="@{sleep.startTimeMilli}"
+            app:sleepEndMillis="@{sleep.endTimeMilli}"/>
 
         <TextView
             android:id="@+id/quality_string"
@@ -53,7 +54,7 @@
             app:layout_constraintStart_toStartOf="@+id/sleep_length"
             app:layout_constraintTop_toBottomOf="@+id/sleep_length"
             tools:text="Excellent!!!"
-            app:sleepQualityString="@{sleep}"/>
+            app:sleepQualityString="@{sleep.sleepQuality}"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
